@@ -1,11 +1,18 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 
+import './style/Home.css';
+
 
 const Home = () => {
     return (
         <div className="home page">
-            <Navbar />
+            <header>
+                <h1>
+                    MoviesBoard
+                </h1>
+                <Navbar />
+            </header>
             <main className="home-container">
                 <div className="home-info">
                     <h1 className="home-title">Movies Board</h1>

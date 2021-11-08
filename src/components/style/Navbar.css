@@ -1,0 +1,10 @@
+nav {
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}

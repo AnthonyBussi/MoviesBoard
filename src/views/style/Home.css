@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main {
+    max-width: 70%;
+    margin: auto;
+    min-height: 100vh;
+}

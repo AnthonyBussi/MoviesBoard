@@ -1,5 +1,5 @@
 nav {
-    padding: 16px;
+    padding: 18px;
     background-color: rgba(255, 255, 255, 0.2);
     text-transform: uppercase;
 }
@@ -8,3 +8,12 @@ ul {
     list-style-type: none;
     display: flex;
 }
+
+ul li a {
+    font-weight: bold;
+}
+
+ul li a:last-of-type {
+    margin-left: 12px;
+}
+

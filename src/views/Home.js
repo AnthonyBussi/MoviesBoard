@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import MovieCard from '../components/MovieCard';
 
 import './style/Home.css';
 
@@ -19,6 +20,7 @@ const Home = () => {
                     <p>Rechercher un film</p>
                 </div>
                 <div className="home-event">
+                    <MovieCard />
                 </div>
             </main>
         </div>

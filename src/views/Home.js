@@ -17,6 +17,7 @@ const Home = () => {
         .then((response) => setMovieData(response.data));
         }, [])
         console.log(movieData);
+
     return (
         <div className="home page">
             <header>

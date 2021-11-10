@@ -9,7 +9,7 @@ const Card = ( { movie } ) => {
 
     return (
         <div className="movie-card">
-            <NavLink to={`details/${movieId}`} className="movie-link">
+            <NavLink to={`movie/${movieId}`} className="movie-link">
                 <h2 className="movie-title">{ movie.title }</h2>
                 <time className="movie-date">{FormatDate.DateForm(movie.release_date)}</time>
                 <img src={ movie.poster } alt="Affiche du film" className="movie-img" />

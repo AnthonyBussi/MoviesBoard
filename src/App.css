@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,6 +8,7 @@
 
 .page {
     background-color: #111418;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 main {

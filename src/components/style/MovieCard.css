@@ -46,6 +46,7 @@
 
 .movie-card-buttons {
     display: flex;
+    padding-bottom: 18px;
 }
 
 .movie-card-buttons button:last-of-type {

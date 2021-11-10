@@ -15,12 +15,11 @@ const Card = ( { movie } ) => {
                 <img src={ movie.poster } alt={`Affiche du film ${movie.title}`} className="movie-img" />
                 <p className="movie-description">{ movie.description }</p>
                 <p className="movie-categories">{ movie.categories.join(' - ') }</p>
-                <p className="movie-categories">{ movie.actors.join(' - ') }</p>
-                <div className="movie-card-buttons">
-                    <button type="button">Modifier</button>
-                    <button type="button">Supprimer</button>
-                </div>
             </Link>
+                <div className="movie-card-buttons">
+                    <button type="button" className="edit-btn">Modifier</button>
+                    <button type="button" className="delete-btn">Supprimer</button>
+                </div>
         </div>
     );
 }

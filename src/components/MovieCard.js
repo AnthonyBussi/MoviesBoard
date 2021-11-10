@@ -14,6 +14,7 @@ const Card = (data) => {
                 <img src={ movieData.backdrop } alt="" className="movie-img" />
                 <p className="movie-date">{ movieData.release_date }</p>
                 <p className="movie-place">{ movieData.description }</p>
+                <p className="singlemovie__infos__desc">{movieData.categories.join(' - ')}</p>
                 <button type="button">Modifier</button>
                 <button type="button">Supprimer</button>
             </div>

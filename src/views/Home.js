@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from '../components/Navbar';
+import Header from '../components/Header';
 import MovieCard from '../components/MovieCard';
 import axios from 'axios';
 
@@ -20,12 +20,13 @@ const Home = () => {
 
     return (
         <div className="home page">
-            <header>
+            {/* <header>
                 <h1>
                     MoviesBoard
                 </h1>
                 <Navbar />
-            </header>
+            </header> */}
+            <Header />
             <main className="home-container">
                 <div className="home-info">
                     <h1 className="home-title">Movies Board</h1>

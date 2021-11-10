@@ -1,5 +1,6 @@
 import React from 'react';
 import './style/MovieCard.css';
+import FormatDate from '../services/FormatDate';
 
 const Card = (data) => {
 
@@ -10,7 +11,7 @@ const Card = (data) => {
             { movieData && (
             <a href="#" className="movie-link">
                 <h2 className="movie-title">{ movieData.title }</h2>
-                <time className="movie-date">{ movieData.release_date }</time>
+                <time className="movie-date">{FormatDate.DateForm(movieData.release_date)}</time>
                 <img src={ movieData.poster } alt="Affiche du film" className="movie-img" />
                 <p className="movie-description">{ movieData.description }</p>
                 <p className="movie-categories">{ movieData.categories.join(' - ') }</p>

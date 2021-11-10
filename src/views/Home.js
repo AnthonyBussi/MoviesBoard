@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import MovieCard from '../components/MovieCard';
 import axios from 'axios';
-
 
 import './style/Home.css';
 
@@ -49,6 +49,7 @@ const Home = () => {
                 </div>
                 
             </main>
+            <Footer />
         </div>
     );
 };

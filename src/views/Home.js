@@ -40,7 +40,7 @@ const Home = () => {
                     </form>
                 </section>
                 <section className="home-results">                    
-                    {movieData.map((movie, index) => <MovieCard movie={ movie } key={ index } />)}
+                    {movieData.map(movie => <MovieCard movie={ movie } key={ movie.id }  />)}
                 </section>
             </main>
             <Footer />

@@ -9,15 +9,13 @@ import './style/Home.css';
 
 
 const Movie = () => {
-
-    const movieId = useParams().id;
-    console.log(movieId);
+    const { id } = useParams()
+    console.log(id);
     
     return (
         <div className="details page">
             <Header />
             <main className="details-container">
-                
             </main>
             <Footer />
         </div>

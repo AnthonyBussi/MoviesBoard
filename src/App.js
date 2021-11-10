@@ -6,6 +6,7 @@ import Add from './views/Add';
 import {  BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.css';
+import Movie from './views/Movie';
 
 function App() {
   return (    
@@ -14,6 +15,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/edit' element={<Edit />} />
             <Route path='/add' element={<Add />} />
+            <Route path='/movies/:id' element={<Movie />} />
         </Routes>
     </BrowserRouter>
   );

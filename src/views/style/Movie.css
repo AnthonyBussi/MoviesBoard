@@ -1,0 +1,46 @@
+.detail-movie-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding: 24px;
+    color: white;
+}
+
+.detail-movie-container-info {
+    margin-right: 24px;
+}
+
+.detail-movie-container-img {
+    width: 40%;
+}
+
+.detail-movie-title {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.detail-movie-date {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.detail-movie-img {
+    margin-bottom: 8px;
+}
+
+.detail-movie-description {
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+.detail-movie-categories {
+    margin-bottom: 12px;    
+}
+
+.detail-movie-card-buttons {
+    display: flex;
+}
+
+.detail-movie-card-buttons button:last-of-type {
+    margin-left: 6px;
+}

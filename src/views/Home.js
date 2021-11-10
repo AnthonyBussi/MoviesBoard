@@ -20,12 +20,6 @@ const Home = () => {
 
     return (
         <div className="home page">
-            {/* <header>
-                <h1>
-                    MoviesBoard
-                </h1>
-                <Navbar />
-            </header> */}
             <Header />
             <main className="home-container">
                 <section className="home-form">
@@ -46,7 +40,7 @@ const Home = () => {
                     </form>
                 </section>
                 <section className="home-results">                    
-                    {movieData && <MovieCard movieData={ movieData }  />}
+                    {movieData.map((movie, index) => <MovieCard movie={ movie } key={ index } />)}
                 </section>
             </main>
             <Footer />

@@ -1,3 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .page {
-    background-color: black;
+    background-color: #111418;
+}
+
+main {
+    max-width: 70%;
+    margin: auto;
+    /* On soustrait la hauteur du header et du footer */
+    min-height: calc(100vh - 120px - 36px);
 }

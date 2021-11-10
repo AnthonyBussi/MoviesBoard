@@ -1,9 +1,9 @@
 header {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     height: 120px;
-    background-color: #FFC830;
-
+    background-color: #7F101E;
 }
 
 .logo {
@@ -11,5 +11,5 @@ header {
 }
 
 h1 {
-    color: white;
+    color: #FFC830;
 }

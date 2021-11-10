@@ -6,20 +6,21 @@ const Card = (data) => {
     const movieData = data.movieData[0];
 
     return (
-        <a href="#">
+        <div className="movie-card">
             { movieData && (
-            <div className="movie-card">
+            <a href="#" className="movie-link">
                 <h2 className="movie-title">{ movieData.title }</h2>
-                <img src={ movieData.poster } alt="" className="movie-img" />
-                <img src={ movieData.backdrop } alt="" className="movie-img" />
-                <p className="movie-date">{ movieData.release_date }</p>
-                <p className="movie-place">{ movieData.description }</p>
-                <p className="singlemovie__infos__desc">{movieData.categories.join(' - ')}</p>
-                <button type="button">Modifier</button>
-                <button type="button">Supprimer</button>
-            </div>
+                <time className="movie-date">{ movieData.release_date }</time>
+                <img src={ movieData.poster } alt="Affiche du film" className="movie-img" />
+                <p className="movie-description">{ movieData.description }</p>
+                <p className="movie-categories">{ movieData.categories.join(' - ') }</p>
+                <div className="movie-card-buttons">
+                    <button type="button">Modifier</button>
+                    <button type="button">Supprimer</button>
+                </div>
+            </a>
             )}
-        </a>
+        </div>
     );
 }
 

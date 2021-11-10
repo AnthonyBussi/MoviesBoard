@@ -28,9 +28,8 @@ const Home = () => {
             </header> */}
             <Header />
             <main className="home-container">
-                <div className="home-info">
-                    <h1 className="home-title">Movies Board</h1>
-                    <p>Rechercher un film</p>
+                <section className="home-form">
+                    <h2>Rechercher un film</h2>
                     <form>
                         <select name="home-filter">
                             <option value="">Filtrer par</option>
@@ -38,16 +37,17 @@ const Home = () => {
                             <option value="date">Date de sortie</option>
                             <option value="category">Catégorie</option>
                         </select>
-                         <input type="text"
+                        <input type="text"
                                 className="home-searchbar"
                                 id="home-searchbar"
                                 placeholder="Rechercher un film..."
-                         />
-                         <button type="submit" name="search-btn" className="search-btn">Rechercher</button>
-                     </form>
-                     {movieData && <MovieCard movieData={ movieData }  />}
-                </div>
-                
+                        />
+                        <button type="submit" name="search-btn" className="search-btn">Rechercher</button>
+                    </form>
+                </section>
+                <section className="home-results">                    
+                    {movieData && <MovieCard movieData={ movieData }  />}
+                </section>
             </main>
             <Footer />
         </div>

@@ -1,4 +1,45 @@
-.movie-card {
+.movie-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid black;
-    padding: 12px;
+    padding: 12px 16px;
+    background-color: #111418;
+    box-shadow:  33px 33px 55px #080a0c, -33px -33px 55px #1a1e24;
+    border-radius: 12px;
+    color: white;
+    width: 300px;
+}
+
+.movie-title {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.movie-date {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.movie-img {
+    width: 80%;
+    margin-bottom: 8px;
+}
+
+.movie-description {
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+.movie-categories {
+    margin-bottom: 12px;    
+}
+
+.movie-card-buttons {
+    display: flex;
+}
+
+.movie-card-buttons button:last-of-type {
+    margin-left: 6px;
 }

@@ -16,8 +16,13 @@ ul li a {
     font-weight: bold;
     color: white;
     text-decoration: none;
+    border-bottom: 3px solid #7F101E;
+    transition: ease-out .3s;
 }
 
 ul li a:visited {
     color: white;
 }
+ ul li a:hover {
+     border-bottom: 3px solid #FFC830;
+ }

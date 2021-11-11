@@ -85,13 +85,56 @@
     align-items: center;
 }
 
-.detail-movie-card-buttons {
+/* .detail-movie-card-buttons {
     display: flex;
 }
 
 .detail-movie-card-buttons button:last-of-type {
     margin-left: 6px;
+} */
+
+
+
+.detail-movie-card-buttons {
+    display: flex;
+    padding-bottom: 18px;
 }
+
+.detail-movie-card-buttons button:last-of-type {
+    margin-left: 6px;
+}
+
+.edit-btn, .delete-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-btn {
+    border: 1px solid #FFC830;
+    background-color: transparent;
+    transition: ease-out .3s;
+}
+
+.edit-btn:hover {
+    background-color: #FFC830;
+}
+
+.delete-btn {
+    border: 1px solid #7F101E;
+    background-color: transparent;
+    transition: ease-out .3s;
+}
+
+.delete-btn:hover {
+    background-color: #7F101E;
+}
+
+
+
 
 .similar-movies-container > h2 {
     color: #FFC830;

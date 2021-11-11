@@ -54,8 +54,8 @@ const Movie = () => {
                     <div className="detail-movie-container-img">
                         <img src={ movieData.poster } alt={`Affiche du film ${movieData.title}`} className="detail-movie-img" />
                         <div className="detail-movie-card-buttons">
-                            <button type="button">Modifier</button>
-                            <button type="button">Supprimer</button>
+                            <button type="button" className="edit-btn">Modifier</button>
+                            <button type="button" className="delete-btn">Supprimer</button>
                         </div>
                     </div>    
                 </section>

@@ -1,0 +1,19 @@
+.form-container form {
+    margin: 12px 0 48px;
+    text-align: center;
+}
+
+.form-container input, .form-container .form-btn {
+    font-size: 16px;
+    padding: 6px 12px;
+}
+
+.form-container input {
+    width: 50%;
+    text-align: center
+}
+
+.form-container .form-btn {
+    cursor: pointer;
+    margin-left: 12px;
+}

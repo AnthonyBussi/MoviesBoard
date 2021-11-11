@@ -13,7 +13,7 @@
 }
 
 main {
-    max-width: 70%;
+    max-width: 80%;
     margin: 24px auto;
     /* On soustrait la hauteur du header et du footer */
     min-height: calc(100vh - 120px - 36px);

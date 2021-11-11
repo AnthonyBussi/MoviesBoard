@@ -13,3 +13,15 @@ header {
 h1 {
     color: #FFC830;
 }
+
+@media screen and (max-width: 650px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: column;
+    }
+}

@@ -20,10 +20,12 @@
 
 .detail-movie-categories {
     display: flex;
+    flex-wrap: wrap;
     margin: 12px 0;
 }
 
 .detail-movie-category {
+    margin-bottom: 12px;
     padding: 6px 12px;
     border-radius: 3px;
     background-color: #FFC830;
@@ -77,6 +79,12 @@
     margin-bottom: 12px;
 }
 
+.detail-movie-container-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .detail-movie-card-buttons {
     display: flex;
 }
@@ -94,4 +102,44 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .detail-movie-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-movie-container-info, .detail-movie-container-img {
+        width: 100%;
+    }
+    
+    .detail-movie-container-info {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .actor-details {
+        width: 100%;
+    }
+
+    .movie-card {
+        width: 45%;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .detail-movie-container-img img{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .movie-card {
+        width: 100%;
+        margin-bottom: 12px;
+    }
 }

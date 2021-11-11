@@ -12,7 +12,7 @@ const Card = ( { movie } ) => {
             <Link to={`movies/${movieId}`} className="movie-link">
                 <h2 className="movie-title">{ movie.title }</h2>
                 <time className="movie-date">{FormatDate.DateForm(movie.release_date)}</time>
-                <img src={ movie.poster } alt={`Affiche du film ${movie.title}`} className="movie-img" />
+                <img src={ movie.poster } alt={ `Affiche du film ${movie.title}` } className="movie-img" />
                 <p className="movie-description">{ movie.description }</p>
                 <p className="movie-categories">{ movie.categories.join(' - ') }</p>
             </Link>

@@ -19,9 +19,54 @@
     margin-bottom: 12px;
 }
 
-.detail-movie-date {
-    font-size: 12px;
+.detail-movie-categories {
+    display: flex;
+    margin: 12px 0;
+}
+
+.detail-movie-category {
+    padding: 6px 12px;
+    border-radius: 3px;
+    background-color: #FFC830;
+    color: #7F101E;
+    font-weight: bold;
+}
+
+.detail-movie-category:not(:last-of-type) {
+    margin-right: 12px;
+}
+
+.list-actors {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.actor-details {
+    margin: 0 0 12px;
+    padding: 12px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+}
+
+.actor-character {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.actor-name {
+    font-size: 1.1rem;
     margin-bottom: 12px;
+    text-align: center;
+}
+
+.actor-photo {
+    height: 120px;
 }
 
 .detail-movie-img {
@@ -31,10 +76,6 @@
 .detail-movie-description {
     text-align: justify;
     margin-bottom: 12px;
-}
-
-.detail-movie-categories {
-    margin-bottom: 12px;    
 }
 
 .detail-movie-card-buttons {

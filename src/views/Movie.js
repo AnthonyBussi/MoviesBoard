@@ -30,8 +30,25 @@ const Movie = () => {
                 <main className="detail-movie-container">
                     <div className="detail-movie-container-info">
                         <h2 className="detail-movie-title">{ movieData.title }</h2>
-                        <time className="detail-movie-date">{FormatDate.DateForm(movieData.release_date)}</time>
+                        <time className="detail-movie-date">Sortie en salle le {FormatDate.DateForm(movieData.release_date)}</time>
+                        <div className="detail-movie-categories"> { movieData.categories && movieData.categories.map(( category, index) =>
+                            <div key={index} className="detail-movie-category">
+                                { category }
+                            </div>                        
+                            ) }
+                        </div>
                         <p className="detail-movie-description">{ movieData.description }</p>
+                        <ul className="list-actors">
+                        { movieData.actors && movieData.actors.map(({ character, name, photo }, index) => (                            
+                                <li key={ index } className="actor-details">
+                                    <div>
+                                        <p className="actor-character">{ character }</p>
+                                        <p className="actor-name">{ name }</p>
+                                     </div>   
+                                    <img src={ photo } alt={ name }  className="actor-photo"/>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                     <div className="detail-movie-container-img">
                         <img src={ movieData.poster } alt={`Affiche du film ${movieData.title}`} className="detail-movie-img" />

@@ -3,16 +3,16 @@ nav {
     text-transform: uppercase;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     display: flex;
 }
 
-ul li:last-of-type {
+nav ul li:last-of-type {
     margin-left: 24px;
 }
 
-ul li a {
+nav ul li a {
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -20,9 +20,10 @@ ul li a {
     transition: ease-out .3s;
 }
 
-ul li a:visited {
+nav ul li a:visited {
     color: white;
 }
- ul li a:hover {
-     border-bottom: 3px solid #FFC830;
- }
+
+nav ul li a:hover {
+    border-bottom: 3px solid #FFC830;
+}

@@ -1,8 +1,7 @@
 .detail-movie-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 24px;
-    padding: 24px;
+    align-items: center;
     color: white;
 }
 
@@ -84,4 +83,15 @@
 
 .detail-movie-card-buttons button:last-of-type {
     margin-left: 6px;
+}
+
+.similar-movies-container > h2 {
+    color: #FFC830;
+    margin: 12px 0 36px;
+}
+
+.similar-movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }

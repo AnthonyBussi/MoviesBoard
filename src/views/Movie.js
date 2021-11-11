@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+// import Header from '../components/Header';
+// import Footer from '../components/Footer';
+import MovieCard from '../components/MovieCard';
 import { useParams } from 'react-router';
 import FormatDate from '../services/FormatDate';
 import axios from 'axios';
@@ -26,8 +27,8 @@ const Movie = () => {
     
     return (
         <div className="movie page">
-            <Header />
-                <main className="detail-movie-container">
+            <main>
+                <section className="detail-movie-container">
                     <div className="detail-movie-container-info">
                         <h2 className="detail-movie-title">{ movieData.title }</h2>
                         <time className="detail-movie-date">Sortie en salle le {FormatDate.DateForm(movieData.release_date)}</time>
@@ -39,12 +40,12 @@ const Movie = () => {
                         </div>
                         <p className="detail-movie-description">{ movieData.description }</p>
                         <ul className="list-actors">
-                        { movieData.actors && movieData.actors.map(({ character, name, photo }, index) => (                            
+                            { movieData.actors && movieData.actors.map(({ character, name, photo }, index) => (                            
                                 <li key={ index } className="actor-details">
                                     <div>
                                         <p className="actor-character">{ character }</p>
                                         <p className="actor-name">{ name }</p>
-                                     </div>   
+                                    </div>   
                                     <img src={ photo } alt={ name }  className="actor-photo"/>
                                 </li>
                             ))}
@@ -57,8 +58,14 @@ const Movie = () => {
                             <button type="button">Supprimer</button>
                         </div>
                     </div>    
-                </main>
-            <Footer />
+                </section>
+                <section className="similar-movies-container">
+                        <h2>Films similaires</h2>
+                    <div className="similar-movies">
+                        { movieData.similar_movies && movieData.similar_movies.map(movie => <MovieCard movie={ movie } key={ movie.id } />)}
+                    </div>
+                </section>
+            </main>
         </div>
     );
 };

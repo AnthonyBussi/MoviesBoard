@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import MovieCard from '../components/MovieCard';
 import axios from 'axios';
 
@@ -20,7 +18,6 @@ const Home = () => {
 
     return (
         <div className="home page">
-            <Header />
             <main className="home-container">
                 <section className="home-form">
                     <h2>Rechercher un film</h2>
@@ -43,7 +40,6 @@ const Home = () => {
                     {movieData.map(movie => <MovieCard movie={ movie } key={ movie.id }  />)}
                 </section>
             </main>
-            <Footer />
         </div>
     );
 };

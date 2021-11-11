@@ -9,6 +9,7 @@
 .page {
     background-color: #111418;
     font-family: 'Roboto Condensed', sans-serif;
+    padding: 24px 0;
 }
 
 main {

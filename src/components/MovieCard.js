@@ -14,7 +14,6 @@ const Card = ( { movie } ) => {
                 <time className="movie-date">{FormatDate.DateForm(movie.release_date)}</time>
                 <img src={ movie.poster } alt={ `Affiche du film ${movie.title}` } className="movie-img" />
                 <p className="movie-description">{ movie.description }</p>
-                <p className="movie-categories">{ movie.categories.join(' - ') }</p>
             </Link>
                 <div className="movie-card-buttons">
                     <button type="button" className="edit-btn">Modifier</button>

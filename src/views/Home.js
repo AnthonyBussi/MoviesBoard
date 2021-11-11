@@ -7,12 +7,14 @@ import './style/Home.css';
 
 const Home = () => {
     const[movieData, setMovieData] = useState([]);
+    const[error, setError] = useState('');
 
     const URL = "http://localhost:3000/movies"
 
     useEffect(() =>{
         axios.get(URL)
-        .then((response) => setMovieData(response.data));
+        .then((response) => setMovieData(response.data))
+        .catch((err) => setError(`<p>Erreur : Impossible d'afficher un résultat</p>`))
         }, [])
         console.log(movieData);
 
@@ -36,7 +38,8 @@ const Home = () => {
                         <button type="submit" name="search-btn" className="search-btn">Rechercher</button>
                     </form>
                 </section>
-                <section className="home-results">                    
+                <section className="home-results">  
+                    { error }
                     {movieData.map(movie => <MovieCard movie={ movie } key={ movie.id }  />)}
                 </section>
             </main>

@@ -37,6 +37,8 @@ const Add = () => {
                         <button type="submit" name="search-btn" className="form-btn">Rechercher</button>
                     </form>
                 </section>
+                <section>
+                </section>
             </main>
         </div>
     );

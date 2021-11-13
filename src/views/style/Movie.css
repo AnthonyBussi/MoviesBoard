@@ -133,9 +133,6 @@
     background-color: #7F101E;
 }
 
-
-
-
 .similar-movies-container > h2 {
     color: #FFC830;
     margin: 12px 0 36px;
@@ -145,6 +142,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.similar-movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 12px;
+    border: 1px solid #FFC830;
+    margin: 0 3px 12px;
+    
+}
+
+.similar-movie h2, .similar-movie p {
+    margin-bottom: 12px;
+}
+
+.similar-movie img {
+    width: 80%;
 }
 
 
@@ -171,6 +187,14 @@
     .movie-card {
         width: 45%;
         margin-bottom: 12px;
+    }
+
+    .similar-movie {
+        width: 100%;
+    }
+
+    .similar-movie img {
+        width: 50%;
     }
 }
 

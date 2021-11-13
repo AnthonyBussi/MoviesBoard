@@ -54,15 +54,22 @@ const Movie = () => {
                     <div className="detail-movie-container-img">
                         <img src={ movieData.poster } alt={`Affiche du film ${movieData.title}`} className="detail-movie-img" />
                         <div className="detail-movie-card-buttons">
-                            <button type="button" className="edit-btn">Modifier</button>
-                            <button type="button" className="delete-btn">Supprimer</button>
+                        <button type="button" className="edit-btn">Modifier</button>
+                        <button type="button" className="delete-btn">Supprimer</button>
                         </div>
                     </div>    
                 </section>
                 <section className="similar-movies-container">
-                        <h2>Films similaires</h2>
+                    <h2>Films similaires</h2>
                     <div className="similar-movies">
-                        { movieData.similar_movies && movieData.similar_movies.map(movie => <MovieCard movie={ movie } key={ movie.id } />)}
+                        { movieData.similar_movies && movieData.similar_movies.map(({title, release_date, poster}, index) => 
+                        // <MovieCard movie={ movie } key={ movie.id } />
+                        <div key={ index } className="similar-movie">
+                            <h2>{ title }</h2>
+                            <p>{ release_date }</p>
+                            <img src={ poster } alt={ title }/>
+                        </div>
+                        )}
                     </div>
                 </section>
             </main>

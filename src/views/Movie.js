@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import Header from '../components/Header';
-// import Footer from '../components/Footer';
-import MovieCard from '../components/MovieCard';
 import { useParams } from 'react-router';
 import FormatDate from '../services/FormatDate';
 import axios from 'axios';
@@ -66,7 +63,7 @@ const Movie = () => {
                         // <MovieCard movie={ movie } key={ movie.id } />
                         <div key={ index } className="similar-movie">
                             <h2>{ title }</h2>
-                            <p>{ release_date }</p>
+                            <time>{ FormatDate.DateForm(release_date) }</time>
                             <img src={ poster } alt={ title }/>
                         </div>
                         )}

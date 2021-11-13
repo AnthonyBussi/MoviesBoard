@@ -72,6 +72,7 @@
 
 .detail-movie-img {
     margin-bottom: 8px;
+    width: 280px;
 }
 
 .detail-movie-description {
@@ -151,16 +152,16 @@
     color: white;
     padding: 12px;
     border: 1px solid #FFC830;
-    margin: 0 3px 12px;
-    
+    margin-bottom: 12px;
 }
 
-.similar-movie h2, .similar-movie p {
+.similar-movie h2, .similar-movie time {
     margin-bottom: 12px;
 }
 
 .similar-movie img {
     width: 80%;
+    max-width: 270px;
 }
 
 

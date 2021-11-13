@@ -4,7 +4,7 @@ import './style/DeleteBtn.css';
 
 const DeleteBtn = ({ id }) => {
     const handleDelete = () =>{
-        axios.delete('http://localhost:3001/movies/' + id);
+        axios.delete('http://localhost:3001/movies/' + id).then((response) => response.data);
         window.location.reload();
         // console.log("test suppression");
     };

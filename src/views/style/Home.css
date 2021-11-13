@@ -26,12 +26,15 @@
 .home-form form > input {
     border: none;
     height: 100%;
+}
+
+.home-filter-cat, .home-filter-date {
     cursor: pointer;
 }
 
-.home-filter-name {
+/* .home-filter-name {
     cursor: pointer;
-}
+} */
 
 .home-form .search-btn {
     margin-left: 48px;

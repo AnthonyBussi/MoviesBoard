@@ -70,3 +70,16 @@
 .edit-btn:hover {
     background-color: #FFC830;
 }
+
+@media screen and (max-width: 1200px) {
+    .movie-card {
+        width: 48%;
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .movie-card {
+        width: 100%;
+    }
+}

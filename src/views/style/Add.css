@@ -17,3 +17,21 @@
     cursor: pointer;
     margin-left: 12px;
 }
+
+.form-add-movie-filter {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.form-add-movie-filter input {
+    margin-top: 6px;
+    height: 40px;
+    padding-left: 12px;
+}
+
+.form-add-movie-validate {
+    font-size: 16px;
+    padding: 6px 12px;
+}

@@ -175,10 +175,10 @@
         width: 100%;
     }
 
-    .movie-card {
+    /* .movie-card {
         width: 45%;
         margin-bottom: 12px;
-    }
+    } */
 
     .similar-movie {
         width: 100%;
@@ -196,8 +196,8 @@
 }
 
 @media screen and (max-width: 650px) {
-    .movie-card {
+    /* .movie-card {
         width: 100%;
         margin-bottom: 12px;
-    }
+    } */
 }

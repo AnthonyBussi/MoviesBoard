@@ -40,12 +40,12 @@ const Home = () => {
                     <form>
                         <div className="home-form-filters">
                             <div className="home-form-filter">
-                                <label for="home-filter-name">Film</label>
+                                <label htmlFor="home-filter-name">Film</label>
                                 <input type="text" id="home-filter-name" className="home-filter-name" placeholder="Nom du film"></input>
                             </div>
                             <div className="home-form-filter">
-                                <label for="home-filter-cat">Catégorie</label>
-                                <select id="home-filter-cat" className="home-filter" name="home-filter-cat">
+                                <label htmlFor="home-filter-cat">Catégorie</label>
+                                <select id="home-filter-cat" className="home-filter-cat" name="home-filter-cat">
                                     <option value="action">Action</option>
                                     <option value="aventure">Aventure</option>
                                     <option value="thriller">Thriller</option>
@@ -54,7 +54,7 @@ const Home = () => {
                                 </select>
                             </div>
                             <div className="home-form-filter">
-                                <label for="home-filter-date">Date de sortie</label>
+                                <label htmlFor="home-filter-date">Date de sortie</label>
                                 <input
                                     type="date"
                                     id="home-filter-date"

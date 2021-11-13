@@ -55,12 +55,58 @@ const Edit = () => {
                                        pattern="http://*"
                                        required />
                             </div>
-                            <div className="form-edit-movie-filter">
-                                <label>Acteurs:</label>
-
+                            <div className="form-add-movie-filter">
+                                <p>Casting :</p>
+                                <div className="form-actor">
+                                    <div className="filter">
+                                        <label htmlFor="actor">Acteur / Actrice</label>
+                                        <input type="text" 
+                                            name="actor"
+                                            placeholder="Nom de l'acteur / actrice"
+                                            required />
+                                    </div>
+                                    <div className="filter">
+                                        <label htmlFor="poster">Photo</label>
+                                        <input type="url" 
+                                                name="poster" 
+                                                placeholder="http://exemple-photo.jpg"
+                                                pattern="http://*"
+                                                required />
+                                    </div>
+                                    <div className="filter">
+                                        <label htmlFor="actor">Rôle</label>
+                                        <input type="text" 
+                                            name="actor"
+                                            placeholder="Rôle"
+                                            required />
+                                    </div>
+                                </div>
                             </div>
-                            <div className="form-edit-movie-filter">
-                                <label>Films similaires:</label>
+                            <div className="form-add-movie-filter">
+                                <p>Films similaires :</p>
+                                <div className="form-similar-movies">
+                                    <div className="filter">
+                                        <label htmlFor="title-similar-movie">Titre</label>
+                                        <input type="text" 
+                                            name="title-similar-movie"
+                                            placeholder="Titre du film"
+                                            required />
+                                    </div>
+                                    <div className="filter">
+                                        <label htmlFor="poster-similar-movie">Affiche</label>
+                                        <input type="url" 
+                                                name="poster-similar-movie" 
+                                                placeholder="http://exemple-poster.jpg"
+                                                pattern="http://*"
+                                                required />
+                                    </div>
+                                    <div className="filter">
+                                        <label htmlFor="date-similar-movie">Date de sortie</label>
+                                        <input type="date" 
+                                            name="date-similar-movie"
+                                            required />
+                                    </div>
+                                </div>
 
                             </div>
                         </div>

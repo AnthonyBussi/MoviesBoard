@@ -35,9 +35,26 @@
     margin-top: 6px;
     height: 40px;
     padding-left: 12px;
+    background-color: rgb(200, 200, 200);
+}
+
+.form-add-movie-filter p {
+    margin-bottom: 12px;
 }
 
 .form-add-movie-validate {
     font-size: 16px;
     padding: 6px 12px;
+}
+
+.form-actor, .form-similar-movies {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+}
+
+.form-actor .filter, .form-similar-movies .filter {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
 }

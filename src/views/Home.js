@@ -23,29 +23,19 @@ const Home = () => {
             <main className="home-container">
                 <section className="home-form">
                     <h2>Rechercher un film</h2>
-                    {/* <form>
-                        <select name="home-filter">
-                            <option value="">Filtrer par</option>
-                            <option value="title">Titre</option>
-                            <option value="date">Date de sortie</option>
-                            <option value="category">Catégorie</option>
-                        </select>
-                        <input type="text"
-                                className="home-searchbar"
-                                id="home-searchbar"
-                                placeholder="Rechercher un film..."
-                        />
-                        <button type="submit" name="search-btn" className="search-btn">Rechercher</button>
-                    </form> */}
                     <form>
                         <div className="home-form-filters">
                             <div className="home-form-filter">
                                 <label htmlFor="home-filter-name">Film</label>
-                                <input type="text" id="home-filter-name" className="home-filter-name" placeholder="Nom du film"></input>
+                                <input type="text" id="home-filter-name" 
+                                       className="home-filter-name" 
+                                       placeholder="Nom du film"></input>
                             </div>
                             <div className="home-form-filter">
                                 <label htmlFor="home-filter-cat">Catégorie</label>
-                                <select id="home-filter-cat" className="home-filter-cat" name="home-filter-cat">
+                                <select id="home-filter-cat" 
+                                        className="home-filter-cat" 
+                                        name="home-filter-cat">
                                     <option value="action">Action</option>
                                     <option value="aventure">Aventure</option>
                                     <option value="thriller">Thriller</option>
@@ -60,8 +50,7 @@ const Home = () => {
                                     id="home-filter-date"
                                     name="home-filter"
                                     value="2021-15-11"
-                                    className="home-filter-date"
-                                />
+                                    className="home-filter-date"/>
                             </div>
                         </div>
                         <button className="search-btn" name="search-btn" type="submit">

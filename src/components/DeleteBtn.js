@@ -4,9 +4,8 @@ import './style/DeleteBtn.css';
 
 const DeleteBtn = ({ id }) => {
     const handleDelete = () =>{
-        axios.delete('http://localhost:3001/movies/' + id).then((response) => response.data);
+        axios.delete(`http://localhost:3001/movies/${id}`);
         window.location.reload();
-        // console.log("test suppression");
     };
 
     return (
@@ -14,7 +13,7 @@ const DeleteBtn = ({ id }) => {
                 if (window.confirm('Le film sera retiré de votre bibliothèque ! Confirmer la suppression ?')) {
                     handleDelete();
                 }
-            }}>
+                }}>
                 Supprimer
             </button>
     );

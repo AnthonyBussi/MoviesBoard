@@ -1,3 +1,9 @@
+.add h2 {
+    text-align: center;
+    color: #FFC830;
+    margin-bottom: 48px;
+}
+
 .form-container form {
     margin: 12px 0 48px;
     text-align: center;

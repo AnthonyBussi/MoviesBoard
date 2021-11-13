@@ -1,0 +1,23 @@
+.edit h2 {
+    text-align: center;
+    color: #FFC830;
+    margin-bottom: 48px;
+}
+
+.form-edit-movie-filter {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.form-edit-movie-filter input {
+    margin-top: 6px;
+    height: 40px;
+    paddsing-left: 12px;
+}
+
+.form-edit-movie-validate {
+    font-size: 16px;
+    padding: 6px 12px;
+}

@@ -27,14 +27,14 @@ const Add = () => {
     return (
         <div className="add page">
             <main>
+                <h2>Ajouter un film à la bibliothèque</h2>
                 <section className="form-container">
                     <form onSubmit={ displayResult }>
-                        <label htmlFor="add-searchbar">Rechercher un film</label>
                         <input list="movies-datalist"
                                type="text"
                                name="add-searchbar"
                                id="add-searchbar"
-                               placeholder="Rechercher un film"
+                               placeholder="Rechercher un film à ajouter"
                                onInput={ handleSearchTerm }
                         />
                         <button type="submit" name="search-btn" className="form-btn">Rechercher</button>
@@ -50,7 +50,7 @@ const Add = () => {
                         </datalist>
                     </form>
                 </section>
-                {/* <section>
+                <section>
                     <form className="form-add-movie">
                         <div className="form-add-movie-filters">
                             <div className="form-add-movie-filter">
@@ -107,7 +107,7 @@ const Add = () => {
                         </div>
                         <button className="form-add-movie-validate">Valider</button>
                     </form>
-                </section> */}
+                </section>
             </main>
         </div>
     );

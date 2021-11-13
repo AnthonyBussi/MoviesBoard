@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './style/MovieCard.css';
 import FormatDate from '../services/FormatDate';
+import DeleteBtn from '../components/DeleteBtn';
 
 const Card = ( { movie } ) => {
 
@@ -17,7 +18,7 @@ const Card = ( { movie } ) => {
             </Link>
                 <div className="movie-card-buttons">
                     <button type="button" className="edit-btn">Modifier</button>
-                    <button type="button" className="delete-btn">Supprimer</button>
+                    <DeleteBtn id={ movie.id }/>
                 </div>
         </div>
     );

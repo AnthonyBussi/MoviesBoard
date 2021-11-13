@@ -105,7 +105,7 @@
     margin-left: 6px;
 }
 
-.edit-btn, .delete-btn {
+.edit-btn {
     padding: 6px 12px;
     border: none;
     border-radius: 3px;
@@ -122,16 +122,6 @@
 
 .edit-btn:hover {
     background-color: #FFC830;
-}
-
-.delete-btn {
-    border: 1px solid #7F101E;
-    background-color: transparent;
-    transition: ease-out .3s;
-}
-
-.delete-btn:hover {
-    background-color: #7F101E;
 }
 
 .similar-movies-container > h2 {

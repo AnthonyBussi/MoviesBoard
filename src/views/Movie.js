@@ -3,6 +3,8 @@ import { useParams } from 'react-router';
 import FormatDate from '../services/FormatDate';
 import axios from 'axios';
 
+import DeleteBtn from '../components/DeleteBtn';
+
 
 import './style/Movie.css';
 
@@ -52,7 +54,7 @@ const Movie = () => {
                         <img src={ movieData.poster } alt={`Affiche du film ${movieData.title}`} className="detail-movie-img" />
                         <div className="detail-movie-card-buttons">
                         <button type="button" className="edit-btn">Modifier</button>
-                        <button type="button" className="delete-btn">Supprimer</button>
+                        <DeleteBtn id={ movieData.id }/>
                         </div>
                     </div>    
                 </section>

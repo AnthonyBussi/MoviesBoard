@@ -19,7 +19,9 @@ const Card = ( { movie } ) => {
                 <p className="movie-description">{shortDescription}...</p>
             </Link>
                 <div className="movie-card-buttons">
-                    <button type="button" className="edit-btn">Modifier</button>
+                    <Link to={`edit/${movieId}`}>
+                        <button type="button" className="edit-btn">Modifier</button>
+                    </Link>
                     <DeleteBtn id={ movie.id }/>
                 </div>
         </div>

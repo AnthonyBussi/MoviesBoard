@@ -10,11 +10,11 @@ const Edit = () => {
     const [movie, setMovie] = useState('');
     
 
+    // on récupère les données du film à modifier
     useEffect(() => {
         axios.get(`http://localhost:3000/movies/${id}`)
             .then((response) => setMovie(response.data))
             .catch(error => console.log(error))
-            console.log(movie.title);
     }, [id]);
 
     return (
@@ -28,14 +28,14 @@ const Edit = () => {
                                 <label htmlFor="title">Titre</label>
                                 <input type="text" 
                                        name="title"
-                                       defaultValue={movie.title}
+                                       defaultValue={ movie.title }
                                        required />
                             </div>
                             <div className="form-edit-movie-filter">
                                 <label htmlFor="date">Date de sortie</label>
                                 <input type="date" 
                                        name="date"
-                                       defaultValue={movie.release_date}
+                                       defaultValue={ movie.release_date }
                                        required />
                             </div>
                             <div className="form-edit-movie-filter">
@@ -49,21 +49,21 @@ const Edit = () => {
                                 <label htmlFor="description">Description</label>
                                 <input type="textarea" 
                                        name="description" 
-                                       defaultValue={movie.description}
+                                       defaultValue={ movie.description }
                                        required />
                             </div>
                             <div className="form-edit-movie-filter">
                                 <label htmlFor="poster">Affiche</label>
                                 <input type="url" 
                                        name="poster" 
-                                       defaultValue={movie.poster}
+                                       defaultValue={ movie.poster }
                                        required />
                             </div>
                             <div className="form-edit-movie-filter">
                                 <label htmlFor="backdrop">Backdrop</label>
                                 <input type="url" 
                                        name="backdrop" 
-                                       defaultValue={movie.backdrop}
+                                       defaultValue={ movie.backdrop }
                                        pattern="http://*"
                                        required />
                             </div>

@@ -17,6 +17,8 @@ const Movie = () => {
 
     const URL = `http://localhost:3000/movies/${id}`;
 
+
+    // on récupère les informations du film sur le serveur
     useEffect(() => {
         axios.get(URL)
         .then((response) => setMovieData(response.data))

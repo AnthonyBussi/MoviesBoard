@@ -11,12 +11,14 @@ const Home = () => {
 
     const URL = "http://localhost:3000/movies"
 
+
+    // affichage d'un message d'erreur
     useEffect(() =>{
         axios.get(URL)
         .then((response) => setMovieData(response.data))
         .catch((err) => setError(`<p>Erreur : Impossible d'afficher un résultat</p>`))
         }, [])
-        console.log(movieData);
+        // console.log(movieData);
 
     return (
         <div className="home page">
@@ -48,8 +50,7 @@ const Home = () => {
                                 <input
                                     type="date"
                                     id="home-filter-date"
-                                    name="home-filter"
-                                    value="2021-15-11"
+                                    name="home-filter-date"
                                     className="home-filter-date"/>
                             </div>
                         </div>

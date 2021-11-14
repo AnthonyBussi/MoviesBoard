@@ -3,8 +3,6 @@ import Edit from './views/Edit';
 import Add from './views/Add';
 import Header from './components/Header';
 import Footer from './components/Footer';
-// import Search from './views/Search';
-// import Favorites from './views/Favorites';
 import {  BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.css';

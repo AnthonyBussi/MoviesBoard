@@ -6,6 +6,7 @@
     box-shadow:  33px 33px 55px #080a0c, -33px -33px 55px #1a1e24;
     border-radius: 12px;
     width: 30%;
+    margin-bottom: 36px;
 }
 
 .movie-link {
@@ -74,7 +75,6 @@
 @media screen and (max-width: 1200px) {
     .movie-card {
         width: 48%;
-        margin-bottom: 36px;
     }
 }
 
